@@ -1,0 +1,87 @@
+mysql:
+  host: 'localhost'
+  database: 'plugins'
+  port: 3306
+  username: 'everything'
+  password: 'root'
+
+messages:
+  no-permission: '&cYou do not have permission to use this command.'
+  not-a-player: '&cOnly in-game players can use this command.'
+  not-a-number: '&c%number% is not a valid number.'
+  invalid-player: '&cCould not find a player with the name ''%player%''.'
+  usages:
+    currency:
+      basecommand: '&cInvalid command usage: /currency <list | create | view | delete>.'
+      create: '&cInvalid command usage: /currency create <name> <symbol>.'
+      view: '&cInvalid command usage: /currency view <name | id>.'
+      delete: '&cInvalid command usage: /currency delete <name | id>.'
+    mines:
+      basecommand: '&cInvalid command usage: /mines <list | create | view | delete | reset | setteleport>.'
+      create: '&cInvalid command usage: /mines create <name>.'
+      composition:
+        basecommand: '&cInvalid command usage: /mines composition <add | view | delete>.'
+        add: '&cInvalid command usage: /mines composition add <name | id> <material>:<data> <percent>.'
+        view: '&cInvalid command usage: /mines composition view <name | id>.'
+        delete: '&cInvalid command usage: /mines composition delete <name | id> <material>:<data>.'
+      reset: '&cInvalid command usage: /mines reset <name | id>.'
+      setteleport: '&cInvalid command usage: /mines setteleport <name | id>.'
+    pickaxe:
+      basecommand: '&cInvalid command usage: /pickaxe <give>.'
+      give: '&cInvalid command usage: /pickaxe give <player> [pickaxe].'
+  currency:
+    invalid-symbol: '&cThe symbol for a currency can only be 1 character long.'
+    already-exists: '&cThere is already a currency in use with that name.'
+    doesnt-exist: '&cThere is no currency that exists with that name or id.'
+    created: '&aSuccessfully created a new currency: &e%symbol%%currency% &7(id: %id%)&a.'
+    error: '&cSomething went wrong whilst trying to alter that currency.'
+    deleted: '&aSuccessfully deleted the currency: &e%symbol%%currency% &7(id: %id%)&a.'
+    formats:
+      currency-list: '&aList of currencies:\n  %currencies%'
+      currency: '  &7- %symbol%%name% (%id%)\n'
+      currency-view: '&aInformation for currency &e''%currency%''&a:\n  &7- Name: &f%name%\n  &7- Symbol: &f%symbol%\n  &7- ID: &f%id%'
+  mines:
+    already-exists: '&cThere is already a mine in use with that name.'
+    doesnt-exist: '&cThere is no mine registered with that name or id.'
+    invalid-selection: '&cYou either don''t have a region selected or your selection is invalid, please select a cuboid region.'
+    created: '&aSuccessfully created a new mine: &e%mine% &7(id: %id%)&a.'
+    error: '&cSomething went wrong whilst trying to alter that mine.'
+    max-percent: '&cThe total percent for a mine cannot exceed 100.0%, the maximum you can add for this mine is %percent%%.'
+    invalid-material: '&cThe material must be in the format <material name>:<data>.'
+    composition-updated: '&aSuccessfully updated the mine composition for &e''%mine%''&a.'
+    unknown-composition: '&cThis mine doesn''t contain the block you specified.'
+    reset: '&aSuccessfully reset mine &e''%mine%''&a.'
+    teleport-set: '&aSuccessfully set the teleport location for mine &e''%mine%'' &aat your location.'
+    formats:
+      mines-list: '&aList of mines:\n  %mines%'
+      mines: '  &7- %name% (%id%)\n'
+      composition-view: '&aComposition for mine &e''%mine%''&a:\n  %compositions%'
+      composition: '  &7- %item% (%percent%%)\n'
+  pickaxe:
+    invalid-pickaxe: '&cCould not find a pickaxe in the config with the name ''%pickaxe%''.'
+    gave-pickaxe: '&aSuccessfully gave &e%player% &aa &e%pickaxe% &apickaxe.'
+    received-pickaxe: '&aYou received a &e%pickaxe%&a.'
+
+progress-bar:
+  total-bars: 20
+  symbol: '|'
+  completed-color: WHITE
+  uncompleted-color: GRAY
+
+pickaxes:
+  default:
+    material: DIAMOND_PICKAXE
+    name: '&c&lProton Blaster &7(%blocks%)'
+    lore:
+      - ''
+      - '&7Level: &f%level%'
+      - '&7Experience: &f%experience% &7(%experience-percent%)'
+      - ''
+      - '&bEfficiency 20'
+      - '&bFortune 10'
+      - ''
+      - '&7This will be your pickaxe which you will use'
+      - '&7throughout your time in prison. Level it up'
+      - '&7by mining blocks and add enchants to it to'
+      - '&7make it more powerful.'
+    enchants-line: 4 # The line at which the enchants are displayed, index starts at 0

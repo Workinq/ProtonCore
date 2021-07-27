@@ -1,0 +1,144 @@
+enchants:
+  value-finder:
+    name: "Value Finder"
+    lore: "&aValue Finder"
+    max-level: 500
+    base-value: 0.01
+    value-multiplier: 1.02
+    base-cost: 10000.0
+    cost-multiplier: 1.02
+    command: 'cell value add %player% 10000'
+  fortune:
+    name: "Fortune"
+    lore: "&bFortune"
+    max-level: 100
+    base-cost: 10000.0
+    cost-multiplier: 1.02
+  speed:
+    name: "Speed"
+    lore: "&cSpeed"
+    max-level: 5
+    base-value: 1.0
+    value-multiplier: 1.0
+    base-cost: 10000.0
+    cost-multiplier: 1.02
+  haste:
+    name: "Haste"
+    lore: "&dHaste"
+    max-level: 5
+    base-value: 1.0
+    value-multiplier: 1.0
+    base-cost: 10000.0
+    cost-multiplier: 1.02
+  efficiency:
+    name: "Efficiency"
+    lore: "&eEfficiency"
+    max-level: 500
+    base-cost: 10000.0
+    cost-multiplier: 1.02
+  key-finder:
+    name: "Key Finder"
+    lore: "&fKey Finder"
+    max-level: 100
+    base-value: 0.01
+    value-multiplier: 1.02
+    base-cost: 10000.0
+    cost-multiplier: 1.02
+    command: 'key give %player% common 1'
+  safes:
+    name: "Safes"
+    lore: "&aSafes"
+    max-level: 100
+    base-value: 0.01
+    value-multiplier: 1.02
+    base-cost: 10000.0
+    cost-multiplier: 1.02
+  laser:
+    name: "Laser"
+    lore: "&bLaser"
+    max-level: 500
+    base-value: 0.01
+    value-multiplier: 1.02
+    base-cost: 10000.0
+    cost-multiplier: 1.02
+  jackhammer:
+    name: "Jackhammer"
+    lore: "&cJackhammer"
+    max-level: 500
+    base-value: 0.01
+    value-multiplier: 1.02
+    base-cost: 10000.0
+    cost-multiplier: 1.02
+  merchant:
+    name: "Merchant"
+    lore: "&dMerchant"
+    max-level: 500
+    base-value: 0.01
+    value-multiplier: 1.02
+    base-cost: 10000.0
+    cost-multiplier: 1.02
+  tokenator:
+    name: "Tokenator"
+    lore: "&eTokenator"
+    max-level: 500
+    base-value: 0.01
+    value-multiplier: 1.02
+    base-cost: 10000.0
+    cost-multiplier: 1.02
+  nuke:
+    name: "Nuke"
+    lore: "&fNuke"
+    max-level: 500
+    base-value: 0.01
+    value-multiplier: 1.02
+    base-cost: 10000.0
+    cost-multiplier: 1.02
+  token-pouch:
+    name: "Token Pouch"
+    lore: "&aToken Pouch"
+    max-level: 500
+    base-value: 0.01
+    value-multiplier: 1.02
+    base-cost: 10000.0
+    cost-multiplier: 1.02
+  season-finder:
+    name: "Season Finder"
+    lore: "&bSeason Finder"
+    max-level: 500
+    base-value: 0.01
+    value-multiplier: 1.02
+    base-cost: 10000.0
+    cost-multiplier: 1.02
+  dragons-fist:
+    name: "Dragon's Fist"
+    lore: "&cDragon's Fist"
+    max-level: 500
+    base-value: 0.01
+    value-multiplier: 1.02
+    base-cost: 10000.0
+    cost-multiplier: 1.02
+  gem-finder:
+    name: "Gem Finder"
+    lore: "&dGem Finder"
+    max-level: 500
+    base-value: 0.01
+    value-multiplier: 1.02
+    base-cost: 10000.0
+    cost-multiplier: 1.02
+  scavenger:
+    name: "Scavenger"
+    lore: "&eScavenger"
+    max-level: 500
+    base-value: 0.01
+    value-multiplier: 1.02
+    base-cost: 10000.0
+    cost-multiplier: 1.02
+  relocations-paypal:
+    name: "Relocation's PayPal"
+    lore: "&fRelocation's PayPal"
+    max-level: 500
+    base-value: 0.01
+    value-multiplier: 1.02
+    base-cost: 10000.0
+    cost-multiplier: 1.02
+    command: 'eco give %player% 100000'

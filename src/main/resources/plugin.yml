@@ -1,0 +1,15 @@
+name: ${project.name}
+main: ${project.groupId}.${project.artifactId}
+version: ${project.version}
+author: ${project.author}
+depend: [WorldEdit]
+commands:
+  currency:
+    usage: /<command>
+    description: Main currency command
+  mines:
+    usage: /<command>
+    description: Main mines command
+  pickaxe:
+    usage: /<command>
+    description: Main pickaxe command
